@@ -1,4 +1,4 @@
-# dimensional-data-model
+Dimensional Data Model
 1. What is dimensional data model?
 2. Importance of Dimensional Data model
 3. Difference Between Dimension, Fact, Fact Tables
