@@ -1,4 +1,4 @@
-# **Dimensional Data Model**
+# **Dimensional Data Model (Star Schema) **
 # 1. What is dimensional data model?
 # 2. Importance of Dimensional Data model
 # 3. Difference Between Dimension, Fact, Fact Tables
