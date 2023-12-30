@@ -1,4 +1,8 @@
-# **Dimensional Data Model (Star Schema) **
+# Dimensional Data Model (Star Schema)
+
+# Table of content 
+- [1. What is dimensional data model] (#1.-what-is-dimensional-data-model?) 
+
 # 1. What is dimensional data model?
 Is a denormalization technique, where a fact table is surrounded by multiple dimensions and constraint by primary and foreign keys
 # 2. Importance of Dimensional Data model
