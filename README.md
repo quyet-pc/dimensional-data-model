@@ -11,6 +11,7 @@ Is a denormalization technique, where a fact table is surrounded by multiple dim
 - Declare the grain: The lowest level of information
 - Define Dimension Tables: Contain the descriptive entities of the data
 - Identify the Facts: are the numeric measurements that result from a business process
+
   A Fact Table contains:
   + The numeric measures
   + Foreign keys of the associated dimensions
