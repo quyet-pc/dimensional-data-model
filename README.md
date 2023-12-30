@@ -29,3 +29,9 @@ It's designed for a Delivery Company, managing aspects like order creation, pick
 
 ![Delivery](images/delivery_data_model.png)
 
+Step 1: Identify the business process
+- Process of order creation 
+- Process of fulfillment
+- Process of payment
+
+Step 2: Declare the grain 
