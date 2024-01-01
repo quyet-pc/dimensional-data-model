@@ -8,7 +8,7 @@
    - Star Schema
    - Snowflake Schema
    - Constellation Schema
-2. Component of Star Schema 
+3. Component of Star Schema 
    - Facts
    - Dimensions
    - Attributes and Hierarchies
@@ -23,7 +23,18 @@
 - Importance in Data Warehousing and Business Intelligence
   
   Crucial for constructing decision support systems in data warehousing and business intelligence, enabling organizations to extract meaningful insights from data.
-  
+# 2. Type of Dimensional Data Model
+  - Star Schema
+    + characterized by a central fact table connected to multiple dimension tables
+    + the fact table contains quantitative data, and dimensions provide context with descriptive information
+    + an efficient choice for many business intelligence applications because of the simplicity and ease of querying
+  - Snowflake Schema
+    + an extension of the star schema where dimension tables are normalized
+    + more complexity in queries and maintenance
+  - Constellation Schema
+    + is not a standalone schema but a collection of multiple star schemas that share some common dimensions
+    + each star schema corresponds to a specific business process, and shared dimensions enable integration and analysis across different processes
+    + provides flexibility in handling diverse business requirements
 # 4. Dimensional Data Model Design Process
 - Identify the business process: The operational activities being modeled
 - Declare the grain: The lowest level of information
