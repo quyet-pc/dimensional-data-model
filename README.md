@@ -37,10 +37,16 @@
     + provides flexibility in handling diverse business requirements
   - Comparison
     
-      | Header 1 | Header 2 | Header 3 | Header 4 |
+      | Aspect | Star Schema | Snowflake Schema | Constellation Schema |
       | -------- | -------- | -------- | ---------| 
-      | Content 1 | Content 2 | Content 3 | |
-      | Content 4 | Content 5 | Content 6 | |
+      | Structure | Centralized structure with a single fact table | Centralized structure, but dimensions are normalized | Collection of multiple star schemas sharing common dimensions|
+      | Complexity | Simple structure with less complexity | More complex due to normalized dimensions | Varied complexity based on the structure of individual star schemas|
+      |Dimensions|Denormalized dimensions for easy querying|Normalized dimensions, more storage efficiency|Shared and specific dimensions for different business processes|
+      |Query Performance|Generally faster due to denormalized structure|May have slightly slower performance due to joins|Performance can vary based on the structure of individual star schemas|
+      |Maintenance|Easier to maintain with fewer tables|More challenging maintenance due to normalization|Maintenance may involve updates across multiple star schemas|
+      |Storage Space|May require more storage space|Can save storage space through normalization|Storage space can vary based on the structure of individual star schemas|
+      |Flexibility|More rigid, but efficient for specific use cases|Offers flexibility with normalized dimensions|Flexible, accommodating diverse business requirements|
+     
 # 4. Dimensional Data Model Design Process
 - Identify the business process: The operational activities being modeled
 - Declare the grain: The lowest level of information
