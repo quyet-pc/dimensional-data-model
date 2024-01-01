@@ -37,10 +37,10 @@
     + provides flexibility in handling diverse business requirements
   - Comparison
     
-   | Header 1 | Header 2 | Header 3 | Header 4 |
-   | -------- | -------- | -------- | ---------| 
-   | Content 1 | Content 2 | Content 3 | |
-   | Content 4 | Content 5 | Content 6 | |
+      | Header 1 | Header 2 | Header 3 | Header 4 |
+      | -------- | -------- | -------- | ---------| 
+      | Content 1 | Content 2 | Content 3 | |
+      | Content 4 | Content 5 | Content 6 | |
 # 4. Dimensional Data Model Design Process
 - Identify the business process: The operational activities being modeled
 - Declare the grain: The lowest level of information
