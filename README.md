@@ -35,6 +35,12 @@
     + is not a standalone schema but a collection of multiple star schemas that share some common dimensions
     + each star schema corresponds to a specific business process, and shared dimensions enable integration and analysis across different processes
     + provides flexibility in handling diverse business requirements
+  - Comparison
+    
+| Header 1 | Header 2 | Header 3 |
+| -------- | -------- | -------- |
+| Content 1 | Content 2 | Content 3 |
+| Content 4 | Content 5 | Content 6 |
 # 4. Dimensional Data Model Design Process
 - Identify the business process: The operational activities being modeled
 - Declare the grain: The lowest level of information
