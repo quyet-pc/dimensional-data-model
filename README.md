@@ -5,22 +5,24 @@
    - Definition
    - Importance of Dimensional Data model
 2. Key Concepts
-  - Facts and Dimensions
-  - Dimensional Modeling Schemas
+   - Facts and Dimensions
+   - Dimensional Modeling Schemas
     + Star Schema
     + Snowflake Schema
 3. Components of Dimensional Data Model
-- Facts
-- Dimensions
-- Attributes and Hierarchies
+   - Facts
+   - Dimensions
+   - Attributes and Hierarchies
+4. Dimensional Data Model Design Process
+5. Case Study 
 
 
 # 1. What is dimensional data model?
-Is a denormalization technique, where a fact table is surrounded by multiple dimensions and constraint by primary and foreign keys
-# 2. Importance of Dimensional Data model
-- To ensure data quality and accuracy in a database
-- To define relationships, primary and foreign keys
-- To provide optimized database for fast queries  
+- Definition
+  A Dimensional Data Model is a structured framework for organizing and analyzing data efficiently, emphasizing simplicity for reporting and analysis
+- Importance in Data Warehousing and Business Intelligence
+  Crucial for constructing decision support systems in data warehousing and business intelligence, enabling organizations to extract meaningful insights from data.
+  
 # 3. Difference Between Dimension, Fact, Fact Tables
 # 4. Dimensional Data Model Design Process
 - Identify the business process: The operational activities being modeled
