@@ -4,12 +4,11 @@
 1.  What is dimensional data model?
    - Definition
    - Importance in Data Warehousing and Business Intelligence
-2. Key Concepts
-   - Facts and Dimensions
-   - Dimensional Modeling Schemas
-    + Star Schema
-    + Snowflake Schema
-3. Components of Dimensional Data Model
+2. Type of Dimensional Data Model
+   - Star Schema
+   - Snowflake Schema
+   - Constellation Schema
+2. Component of Star Schema 
    - Facts
    - Dimensions
    - Attributes and Hierarchies
@@ -25,7 +24,6 @@
   
   Crucial for constructing decision support systems in data warehousing and business intelligence, enabling organizations to extract meaningful insights from data.
   
-# 3. Difference Between Dimension, Fact, Fact Tables
 # 4. Dimensional Data Model Design Process
 - Identify the business process: The operational activities being modeled
 - Declare the grain: The lowest level of information
