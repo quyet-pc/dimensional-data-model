@@ -3,7 +3,7 @@
 # Table of content 
 1.  What is dimensional data model?
    - Definition
-   - Importance of Dimensional Data model
+   - Importance in Data Warehousing and Business Intelligence
 2. Key Concepts
    - Facts and Dimensions
    - Dimensional Modeling Schemas
@@ -19,8 +19,10 @@
 
 # 1. What is dimensional data model?
 - Definition
+  
   A Dimensional Data Model is a structured framework for organizing and analyzing data efficiently, emphasizing simplicity for reporting and analysis
 - Importance in Data Warehousing and Business Intelligence
+  
   Crucial for constructing decision support systems in data warehousing and business intelligence, enabling organizations to extract meaningful insights from data.
   
 # 3. Difference Between Dimension, Fact, Fact Tables
