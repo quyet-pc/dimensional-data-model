@@ -47,7 +47,10 @@
       |Storage Space|May require more storage space|Can save storage space through normalization|Storage space can vary based on the structure of individual star schemas|
       |Flexibility|More rigid, but efficient for specific use cases|Offers flexibility with normalized dimensions|Flexible, accommodating diverse business requirements|
 # 3. Component of Star Schema
-   - Fact
+   - Facts
+     + Definition
+
+       Facts are quantitative data representing the metrics or measures that businesses want to analyze. These metrics can include sales revenue, quantities sold, or any other measurable aspect of business performance
 # 4. Dimensional Data Model Design Process
 - Identify the business process: The operational activities being modeled
 - Declare the grain: The lowest level of information
