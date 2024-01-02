@@ -9,8 +9,8 @@
    - Snowflake Schema
    - Constellation Schema
 3. Component of Star Schema 
-   - Facts
-   - Dimensions
+   - Fact Table 
+   - Dimension Table
    - Attributes and Hierarchies
 4. Dimensional Data Model Design Process
 5. Case Study 
@@ -50,10 +50,18 @@
       |Storage Space|May require more storage space|Can save storage space through normalization|Storage space can vary based on the structure of individual star schemas|
       |Flexibility|More rigid, but efficient for specific use cases|Offers flexibility with normalized dimensions|Flexible, accommodating diverse business requirements|
 # 3. Component of Star Schema
-   - Facts
+   - Fact Table
      + Definition
 
-       Facts are quantitative data representing the metrics or measures that businesses want to analyze. These metrics can include sales revenue, quantities sold, or any other measurable aspect of business performance
+     + Properties
+     + Type of fact table
+    
+   - Dimension Table
+     + Definition
+     + Properties
+     + Type of dimension table
+       
+   - Attributes and Hierarchies
 # 4. Dimensional Data Model Design Process
 - Identify the business process: The operational activities being modeled
 - Declare the grain: The lowest level of information
