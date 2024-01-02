@@ -109,9 +109,25 @@
      + Type of dimension table
 
        _Conformed Dimension Table_: Maintains consistency across multiple star schemas, ensuring uniformity in data interpretation
+       
+          | ProductID | ProductName | Category | Manufacturer | 
+          | -------- | -------- | -------- |---|
+          | 101 | Laptop | Electronics |ABC Electronics|
+          | 102 | Smartphone | Electronics |XYZ Technologies|
+          | 103 | Desk Chair | Furniture |Furniture Co|       
 
        _Slowly Changing Dimension (SCD)_: Manages dimensions that evolve over time, preserving historical information
+    
+       + SCD Type 1: Overwrite (No History)
+         Definition: Overwrites existing data with new values when a change occurs, without preserving historical information
+         Example: EmployeeDimensionSCD1 - If an employee's information changes, the existing row is simply updated without preserving historical records
 
+          | EmployeeID | EmployeeName | Department | StartDate | EndDate|
+          | -------- | -------- | -------- |---| --- |
+          | 101 | John Doe | IT |2022-01-01| 9999-12-31 |
+          | 102 | Jane Smith | Finance |2022-03-15| 9999-12-31 |
+          | 103 | Bob Johnson | HR |2023-02-01| 9999-12-31 |
+         
        _Junk Dimension Table_: Consolidates low-cardinality flags and attributes to reduce dimensionality
        
    - Attributes and Hierarchies
