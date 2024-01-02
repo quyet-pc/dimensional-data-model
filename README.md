@@ -191,9 +191,12 @@
        
    - Attributes and Hierarchies
      + Attributes: columns in the dimension table, mainly descriptive values
+       
        Example of Customer Dimension table: Name of customer, age, gender, marital status
      + Hierarchies: Hierarchies are organized structures within dimensions that allow for drilling down or rolling up in data analysis
+       
        Example of time dimension hierarchy: year > month > day
+       
        Example of location dimension hierarchy: country > province > city > district > ward 
 # 4. Dimensional Data Model Design Process
 - Identify the business process: The operational activities being modeled
