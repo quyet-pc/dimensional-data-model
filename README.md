@@ -73,15 +73,32 @@
      + Type of fact table
        
        _Transactional Fact Table_: Stores detailed transactional data at a low level of granularity
-       
+          | Header 1 | Header 2 | Header 3 |
+            | -------- | -------- | -------- |
+            | Content 1 | Content 2 | Content 3 |
+            | Content 4 | Content 5 | Content 6 |
+          
        _Periodic Snapshot Fact Table_: Captures periodic snapshots of business processes at specific intervals
        
        _Accumulative Snapshot Fact Table_: Tracks cumulative values over time, useful for performance monitoring
     
    - Dimension Table
      + Definition
-     + Properties
+    
+       Dimension tables within each star schema store descriptive attributes providing context to the quantitative data in the corresponding fact table
+     + Contents
+
+       Dimension tables include attributes specific to the business process, such as product details, customer information, and time periods
+     + Relationships
+
+       Dimension tables are linked to the fact table within the same star schema through foreign keys, enabling a deeper understanding of the data
      + Type of dimension table
+
+       _Conformed Dimension Table_: Maintains consistency across multiple star schemas, ensuring uniformity in data interpretation
+
+       _Slowly Changing Dimension (SCD)_: Manages dimensions that evolve over time, preserving historical information
+
+       _Junk Dimension Table_: Consolidates low-cardinality flags and attributes to reduce dimensionality
        
    - Attributes and Hierarchies
 # 4. Dimensional Data Model Design Process
