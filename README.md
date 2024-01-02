@@ -28,13 +28,16 @@
     + characterized by a central fact table connected to multiple dimension tables
     + the fact table contains quantitative data, and dimensions provide context with descriptive information
     + an efficient choice for many business intelligence applications because of the simplicity and ease of querying
+      ![Star Schema](images/star_schema.png)
   - Snowflake Schema
     + an extension of the star schema where dimension tables are normalized
     + more complexity in queries and maintenance
+      ![Snowflake Schema](images/snowflake_schema.png)
   - Constellation Schema
     + is not a standalone schema but a collection of multiple star schemas that share some common dimensions
     + each star schema corresponds to a specific business process, and shared dimensions enable integration and analysis across different processes
     + provides flexibility in handling diverse business requirements
+      ![Constellation Schema](images/constellation_schema.jpg)
   - Comparison
     
       | Aspect | Star Schema | Snowflake Schema | Constellation Schema |
