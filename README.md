@@ -1,4 +1,4 @@
-# Dimensional Data Model (Star Schema)
+# Dimensional Data Model
 
 # Table of content 
 1.  What is dimensional data model?
