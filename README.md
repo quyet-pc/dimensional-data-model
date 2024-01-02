@@ -74,14 +74,25 @@
        
        _Transactional Fact Table_: Stores detailed transactional data at a low level of granularity
        
+          | TransactionID | ProductID | CustomerID |SalesAmount |Quantity | TransactionDate|
+          | -------- | -------- | -------- |---|---|---|
+          | 1 | 101 | 201 |500.00|2|2023-01-15 08:30:00|
+          | 2 | 102 | 202 |300.00|1|2023-01-16 12:45:00|
+          | 3 | 103 | 203 |100.00|3|2023-01-17 09:15:00|
+          
+       _Periodic Snapshot Fact Table_: Captures periodic snapshots of business processes at specific intervals
+    
           | Header 1 | Header 2 | Header 3 | | | |
           | -------- | -------- | -------- |---|---|---|
           | Content 1 | Content 2 | Content 3 ||||
           | Content 4 | Content 5 | Content 6 ||||
-          
-       _Periodic Snapshot Fact Table_: Captures periodic snapshots of business processes at specific intervals
        
        _Accumulative Snapshot Fact Table_: Tracks cumulative values over time, useful for performance monitoring
+
+          | Header 1 | Header 2 | Header 3 | | | |
+          | -------- | -------- | -------- |---|---|---|
+          | Content 1 | Content 2 | Content 3 ||||
+          | Content 4 | Content 5 | Content 6 ||||
     
    - Dimension Table
      + Definition
