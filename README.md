@@ -52,9 +52,14 @@
 
    - In practical terms, companies utilize a range of business processes, with the Constellation Schema being a frequently employed tool for business intelligence. Below, I provide details about the Constellation Schema, but for simplicity, I refer to it as the Star Schema (Constellation Schema based on Star Schema)
     
-# 3. Component of Star Schema
+# 3. Components of Star Schema
    First, we need understand facts 
-   
+   - These are numerical values
+   - Represents the performance measures of the business activity
+   - Examples: Productivity, expenses, sales, profit, prices, quantity
+   - Facts are also called measures. They are stored in the fact table
+
+   A star schema has four main components: Fact table, Dimension tables, Attributes, Attribute hierarchies
    - Fact Table
      + Definition
        The fact table in each star schema holds quantitative data specific to the corresponding business process. It serves as the central repository for measurable metrics
