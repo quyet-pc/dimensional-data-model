@@ -168,10 +168,26 @@
           | 102 | Jane Smith | Finance |2022-03-15| 9999-12-31 |1|
           | 103 | Bob Johnson | HR |2023-02-01| 9999-12-31 |1|
 
+       + SCD Type 6: Versioned SCD (Extended Hybrid)
 
+         Definition: An extension of Type 2 where versioning is introduced to handle multiple changes within the same effective period.
+         
+         Example: EmployeeDimensionSCD6 - In this example, each version is assigned a unique version number to handle multiple changes within the same effective period.
 
+          | EmployeeID | EmployeeName | Department | StartDate | EndDate|Version |
+          | -------- | -------- | -------- |---| --- | --- |
+          | 101 | John Doe | IT |2022-01-01| 2022-06-30 | 1|
+          | 101 | John Doe | HR |2022-07-01| 9999-12-31 |2|
+          | 102 | Jane Smith | Finance |2022-03-15| 9999-12-31 |1|
+          | 103 | Bob Johnson | HR |2023-02-01| 9999-12-31 |1|
 
        _Junk Dimension Table_: Consolidates low-cardinality flags and attributes to reduce dimensionality
+       
+          | OrderID | ShippingMethod | PaymentMethod | Status | 
+          | -------- | -------- | -------- |---|
+          | 1001 | Standard | Credit Card |Shipped|
+          | 1002 | Express | PayPal |Delivered|
+          | 1003 | Standard | Cash |Processing|       
        
    - Attributes and Hierarchies
 # 4. Dimensional Data Model Design Process
