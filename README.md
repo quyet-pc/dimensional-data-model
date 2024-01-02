@@ -49,10 +49,15 @@
       |Maintenance|Easier to maintain with fewer tables|More challenging maintenance due to normalization|Maintenance may involve updates across multiple star schemas|
       |Storage Space|May require more storage space|Can save storage space through normalization|Storage space can vary based on the structure of individual star schemas|
       |Flexibility|More rigid, but efficient for specific use cases|Offers flexibility with normalized dimensions|Flexible, accommodating diverse business requirements|
+
+   - In practical terms, companies utilize a range of business processes, with the Constellation Schema being a frequently employed tool for business intelligence. Below, I provide details about the Constellation Schema, but for simplicity, I refer to it as the Star Schema (Constellation Schema based on Star Schema)
+    
 # 3. Component of Star Schema
+   First, we need understand facts 
+   
    - Fact Table
      + Definition
-
+       The fact table in each star schema holds quantitative data specific to the corresponding business process. It serves as the central repository for measurable metrics
      + Properties
      + Type of fact table
     
