@@ -75,9 +75,9 @@
        _Transactional Fact Table_: Stores detailed transactional data at a low level of granularity
        
           | Header 1 | Header 2 | Header 3 |
-            | -------- | -------- | -------- |
-            | Content 1 | Content 2 | Content 3 |
-            | Content 4 | Content 5 | Content 6 |
+          | -------- | -------- | -------- |
+          | Content 1 | Content 2 | Content 3 |
+          | Content 4 | Content 5 | Content 6 |
           
        _Periodic Snapshot Fact Table_: Captures periodic snapshots of business processes at specific intervals
        
