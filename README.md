@@ -119,7 +119,7 @@
        _Slowly Changing Dimension (SCD)_: Manages dimensions that evolve over time, preserving historical information
     
        + SCD Type 1: Overwrite (No History)
-       + 
+         
          Definition: Overwrites existing data with new values when a change occurs, without preserving historical information
          
          Example: EmployeeDimensionSCD1 - If an employee's information changes, the existing row is simply updated without preserving historical records
