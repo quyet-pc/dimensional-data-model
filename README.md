@@ -73,7 +73,9 @@
      + Type of fact table
        
        _Transactional Fact Table_: Stores detailed transactional data at a low level of granularity
+       
        _Periodic Snapshot Fact Table_: Captures periodic snapshots of business processes at specific intervals
+       
        _Accumulative Snapshot Fact Table_: Tracks cumulative values over time, useful for performance monitoring
     
    - Dimension Table
