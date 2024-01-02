@@ -63,8 +63,14 @@
    - Fact Table
      + Definition
        The fact table in each star schema holds quantitative data specific to the corresponding business process. It serves as the central repository for measurable metrics
-     + Properties
+     + Contents
+       Fact tables include numerical data relevant to the business process, such as sales revenue, quantities sold, or other key performance indicators.
+     + Relationships
+        Fact tables establish relationships with dimension tables within the same star schema through foreign keys, facilitating comprehensive analysis.
      + Type of fact table
+       _Transactional Fact Table_: Stores detailed transactional data at a low level of granularity
+       _Periodic Snapshot Fact Table_: Captures periodic snapshots of business processes at specific intervals
+       _Accumulative Snapshot Fact Table_: Tracks cumulative values over time, useful for performance monitoring
     
    - Dimension Table
      + Definition
@@ -95,9 +101,11 @@ Step 1: Identify the business process
 - Process of fulfillment
 - Process of payment
 
+Step 2: Declare the grain 
+
 # 6. Support links
 - https://www.holistics.io/blog/the-three-types-of-fact-tables/
 - https://www.geeksforgeeks.org/components-and-analysis-of-star-schema-design/
 - https://www.holistics.io/blog/scd-cloud-data-warehouse/
 
-Step 2: Declare the grain 
+
