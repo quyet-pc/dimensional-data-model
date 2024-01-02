@@ -73,6 +73,7 @@
      + Type of fact table
        
        _Transactional Fact Table_: Stores detailed transactional data at a low level of granularity
+       
           | Header 1 | Header 2 | Header 3 |
             | -------- | -------- | -------- |
             | Content 1 | Content 2 | Content 3 |
