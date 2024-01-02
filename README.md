@@ -154,7 +154,23 @@
           | 101 | John Doe | IT |NULL |2022-01-01| 9999-12-31 |
           | 102 | Jane Smith | Finance | NULL |2022-03-15| 9999-12-31 |
           | 103 | Bob Johnson | HR |2023-02-01| NULL | 9999-12-31 |
+
+       + SCD Type 4: Hybrid (Mixed Approach)
+
+         Definition: Combines elements of Type 1 and Type 2. Some attributes are overwritten (Type 1), while others are preserved with new rows (Type 2).
          
+         Example: EmployeeDimensionSCD4 - Some attributes may be overwritten (Type 1), while others are preserved with new rows (Type 2), each version is assigned a unique version number.
+
+          | EmployeeID | EmployeeName | Department | StartDate | EndDate|Version |
+          | -------- | -------- | -------- |---| --- | --- |
+          | 101 | John Doe | IT |2022-01-01| 2022-12-31 | 1|
+          | 101 | John Doe | IT |2023-01-01| 9999-12-31 |2|
+          | 102 | Jane Smith | Finance |2022-03-15| 9999-12-31 |1|
+          | 103 | Bob Johnson | HR |2023-02-01| 9999-12-31 |1|
+
+
+
+
        _Junk Dimension Table_: Consolidates low-cardinality flags and attributes to reduce dimensionality
        
    - Attributes and Hierarchies
