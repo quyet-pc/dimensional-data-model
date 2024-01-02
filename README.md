@@ -129,6 +129,31 @@
           | 101 | John Doe | IT |2022-01-01| 9999-12-31 |
           | 102 | Jane Smith | Finance |2022-03-15| 9999-12-31 |
           | 103 | Bob Johnson | HR |2023-02-01| 9999-12-31 |
+    
+       + SCD Type 2: Add New Row (Preserve History)
+
+         Definition: Adds a new row for each change to a dimension, preserving the historical record. Typically includes start and end dates to track the duration of each version.
+         
+         Example: EmployeeDimensionSCD2 - A new row is added for each change, preserving the historical record of each employee's department
+
+          | EmployeeID | EmployeeName | Department | StartDate | EndDate|
+          | -------- | -------- | -------- |---| --- |
+          | 101 | John Doe | IT |2022-01-01| 2022-12-31 |
+          | 101 | John Doe | IT |2023-01-01| 9999-12-31 |
+          | 102 | Jane Smith | Finance |2022-03-15| 9999-12-31 |
+          | 103 | Bob Johnson | HR |2023-02-01| 9999-12-31 |
+
+       + SCD Type 3: Add New Attribute (Partial History)
+
+         Definition: Adds new columns to the existing row to store limited historical information, usually the current and previous values
+         
+         Example: EmployeeDimensionSCD3 - New attributes (PrevDepartment) are added to the existing row to track limited historical information
+
+          | EmployeeID | EmployeeName | Department | PrevDepartment| StartDate | EndDate|
+          | -------- | -------- | -------- |---| --- |
+          | 101 | John Doe | IT |NULL |2022-01-01| 9999-12-31 |
+          | 102 | Jane Smith | Finance | NULL |2022-03-15| 9999-12-31 |
+          | 103 | Bob Johnson | HR |2023-02-01| NULL | 9999-12-31 |
          
        _Junk Dimension Table_: Consolidates low-cardinality flags and attributes to reduce dimensionality
        
