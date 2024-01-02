@@ -53,7 +53,7 @@
    - In practical terms, companies utilize a range of business processes, with the Constellation Schema being a frequently employed tool for business intelligence. Below, I provide details about the Constellation Schema, but for simplicity, I refer to it as the Star Schema (Constellation Schema based on Star Schema)
     
 # 3. Components of Star Schema
-   First, we need understand facts 
+   Initially, it is essential to comprehend the facts 
    - These are numerical values
    - Represents the performance measures of the business activity
    - Examples: Productivity, expenses, sales, profit, prices, quantity
@@ -94,5 +94,10 @@ Step 1: Identify the business process
 - Process of order creation 
 - Process of fulfillment
 - Process of payment
+
+# 6. Support links
+- https://www.holistics.io/blog/the-three-types-of-fact-tables/
+- https://www.geeksforgeeks.org/components-and-analysis-of-star-schema-design/
+- https://www.holistics.io/blog/scd-cloud-data-warehouse/
 
 Step 2: Declare the grain 
