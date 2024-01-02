@@ -125,7 +125,7 @@
          Example: EmployeeDimensionSCD1 - If an employee's information changes, the existing row is simply updated without preserving historical records
 
           | EmployeeID | EmployeeName | Department | StartDate | EndDate|
-          | -------- | -------- | -------- |---| --- |
+          | -------- | -------- | -------- |---| --- | 
           | 101 | John Doe | IT |2022-01-01| 9999-12-31 |
           | 102 | Jane Smith | Finance |2022-03-15| 9999-12-31 |
           | 103 | Bob Johnson | HR |2023-02-01| 9999-12-31 |
@@ -150,7 +150,7 @@
          Example: EmployeeDimensionSCD3 - New attributes (PrevDepartment) are added to the existing row to track limited historical information
 
           | EmployeeID | EmployeeName | Department | PrevDepartment| StartDate | EndDate|
-          | -------- | -------- | -------- |---| --- |
+          | -------- | -------- | -------- |---| --- | --- |
           | 101 | John Doe | IT |NULL |2022-01-01| 9999-12-31 |
           | 102 | Jane Smith | Finance | NULL |2022-03-15| 9999-12-31 |
           | 103 | Bob Johnson | HR |2023-02-01| NULL | 9999-12-31 |
