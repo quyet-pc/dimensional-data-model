@@ -218,37 +218,37 @@ It's designed for a Delivery Company, managing aspects like order creation, pick
 
 Presently, we implement a dimensional data model on the Data Warehouse for the purpose of generating reports and facilitating analytics.
 
-[Click here](https://docs.google.com/spreadsheets/d/13eBDrp-BTDYiC1vPQar-1vOb_N_hJ9pS-YgUUzXWukE/edit?usp=sharing) for full step of design model 
+**[Click here](https://docs.google.com/spreadsheets/d/13eBDrp-BTDYiC1vPQar-1vOb_N_hJ9pS-YgUUzXWukE/edit?usp=sharing) for full step of design model **
 
-Step 0: Understand datasources (data dictionary + schema)
+**Step 0: Understand datasources (data dictionary + schema)**__
 
 We already have schema, now we need to create a simple data dictionary follow this format 
 
 ![Data Dictionary](images/data_dictionary.png)
 
-Step 1: Identify the business process
+**Step 1: Identify the business process**__
 - Process of order creation 
 - Process of fulfillment
 - Process of payment
 
-Step 2: Declare the grain of each process 
+**Step 2: Declare the grain of each process **__
 - Process of order creation: the unique identification of each order 
 - Process of fulfillment: the distinct combination of attributes that uniquely identifies each pickup and drop-off event for an order
 - Process of payment: the unique combination of attributes that distinguish each payment
 
-Step 3 & 4:  Define Dimension and Fact Tables 
+**Step 3 & 4:  Define Dimension and Fact Tables **__
 
 ![Design Dimensional Data Model](images/design_dimensional_data_model.png)
 
-Step 5: Conceptual Model 
+**Step 5: Conceptual Model **__
 
 ![Conceptual Model](images/conceptual_model.png)
 
-Step 6: Logical Model 
+**Step 6: Logical Model **__
 
 ![Logical Model](images/logical_model.png)
 
-Step 7: Physical Model 
+**Step 7: Physical Model **__
 
 During this phase, we utilize SQL to construct a table in the Data Warehouse. When employing stack dbt for data transformation, there's no necessity to create this physical model. Instead, we compose SQL queries and execute them on dbt. This process generates the table, and subsequently, we configure incremental updates, indexing, and other settings within dbt
 
