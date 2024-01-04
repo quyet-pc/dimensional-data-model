@@ -218,9 +218,13 @@ It's designed for a Delivery Company, managing aspects like order creation, pick
 
 Presently, we implement a dimensional data model on the Data Warehouse for the purpose of generating reports and facilitating analytics.
 
-[Click here](https://docs.google.com/spreadsheets/d/13eBDrp-BTDYiC1vPQar-1vOb_N_hJ9pS-YgUUzXWukE/edit?usp=sharing) fore full step of design model 
+[Click here](https://docs.google.com/spreadsheets/d/13eBDrp-BTDYiC1vPQar-1vOb_N_hJ9pS-YgUUzXWukE/edit?usp=sharing) for full step of design model 
 
 Step 0: Understand datasources (data dictionary + schema)
+
+We already have schema, now we need to create a simple data dictionary follow this format 
+
+![Data Dictionary](images/data_dictionary.png)
 
 Step 1: Identify the business process
 - Process of order creation 
