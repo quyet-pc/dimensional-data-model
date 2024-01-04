@@ -236,9 +236,10 @@ Step 3 & 4:  Define Dimension and Fact Tables
 
 ![Design Dimensional Data Model](images/design_dimensional_data_model.png)
 
-Step 5: Logical Model 
+Step 5: Conceptual Model 
 
 ![Logical Model](images/logical_model.png)
+
 
 
 # 6. Support links
