@@ -240,15 +240,15 @@ We already have schema, now we need to create a simple data dictionary follow th
 
 ![Design Dimensional Data Model](images/design_dimensional_data_model.png)
 
-__**Step 5: Conceptual Model**__
+**Step 5: Conceptual Model**
 
 ![Conceptual Model](images/conceptual_model.png)
 
-**Step 6: Logical Model **__
+**Step 6: Logical Model**
 
 ![Logical Model](images/logical_model.png)
 
-**Step 7: Physical Model **__
+**Step 7: Physical Model**
 
 During this phase, we utilize SQL to construct a table in the Data Warehouse. When employing stack dbt for data transformation, there's no necessity to create this physical model. Instead, we compose SQL queries and execute them on dbt. This process generates the table, and subsequently, we configure incremental updates, indexing, and other settings within dbt
 
