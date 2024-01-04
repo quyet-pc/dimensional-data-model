@@ -221,7 +221,14 @@ Step 1: Identify the business process
 - Process of fulfillment
 - Process of payment
 
-Step 2: Declare the grain 
+Step 2: Declare the grain of each process 
+- Process of order creation: the unique identification of each order 
+- Process of fulfillment: the distinct combination of attributes that uniquely identifies each pickup and drop-off event for an order
+- Process of payment: the unique combination of attributes that distinguish each payment
+
+Step 3: Define Dimension Tables & Step 4 
+
+
 
 # 6. Support links
 - https://www.holistics.io/blog/the-three-types-of-fact-tables/
