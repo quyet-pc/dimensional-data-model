@@ -216,6 +216,10 @@ It's designed for a Delivery Company, managing aspects like order creation, pick
 
 ![Delivery](images/delivery_data_model.png)
 
+Presently, we implement a dimensional data model on the Data Warehouse for the purpose of generating reports and facilitating analytics.
+
+Step 0: Understand database 
+
 Step 1: Identify the business process
 - Process of order creation 
 - Process of fulfillment
@@ -227,6 +231,7 @@ Step 2: Declare the grain of each process
 - Process of payment: the unique combination of attributes that distinguish each payment
 
 Step 3: Define Dimension Tables & Step 4 
+![Design Dimensional Data Model](images/design_dimensional_data_model.png)
 
 
 
