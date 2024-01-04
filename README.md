@@ -230,8 +230,11 @@ Step 2: Declare the grain of each process
 - Process of fulfillment: the distinct combination of attributes that uniquely identifies each pickup and drop-off event for an order
 - Process of payment: the unique combination of attributes that distinguish each payment
 
-Step 3: Define Dimension Tables & Step 4 
+Step 3 & 4:  Define Dimension and Fact Tables 
+
 ![Design Dimensional Data Model](images/design_dimensional_data_model.png)
+
+Step 5: Logical Model 
 
 
 
