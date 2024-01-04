@@ -217,6 +217,7 @@ It's designed for a Delivery Company, managing aspects like order creation, pick
 ![Delivery](images/delivery_data_model.png)
 
 Presently, we implement a dimensional data model on the Data Warehouse for the purpose of generating reports and facilitating analytics.
+[Click here](https://docs.google.com/spreadsheets/d/13eBDrp-BTDYiC1vPQar-1vOb_N_hJ9pS-YgUUzXWukE/edit?usp=sharing) fore full step of design model 
 
 Step 0: Understand database 
 
@@ -236,6 +237,7 @@ Step 3 & 4:  Define Dimension and Fact Tables
 
 Step 5: Logical Model 
 
+![Logical Model](images/logical_model.png)
 
 
 # 6. Support links
