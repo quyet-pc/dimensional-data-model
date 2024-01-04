@@ -220,27 +220,27 @@ Presently, we implement a dimensional data model on the Data Warehouse for the p
 
 **[Click here](https://docs.google.com/spreadsheets/d/13eBDrp-BTDYiC1vPQar-1vOb_N_hJ9pS-YgUUzXWukE/edit?usp=sharing) for full step of design model **
 
-**Step 0: Understand datasources (data dictionary + schema)**__
+**Step 0: Understand datasources (data dictionary + schema)**
 
 We already have schema, now we need to create a simple data dictionary follow this format 
 
 ![Data Dictionary](images/data_dictionary.png)
 
-**Step 1: Identify the business process**__
+**Step 1: Identify the business process**
 - Process of order creation 
 - Process of fulfillment
 - Process of payment
 
-**Step 2: Declare the grain of each process **__
+**Step 2: Declare the grain of each process**
 - Process of order creation: the unique identification of each order 
 - Process of fulfillment: the distinct combination of attributes that uniquely identifies each pickup and drop-off event for an order
 - Process of payment: the unique combination of attributes that distinguish each payment
 
-**Step 3 & 4:  Define Dimension and Fact Tables **__
+**Step 3 & 4:  Define Dimension and Fact Tables**
 
 ![Design Dimensional Data Model](images/design_dimensional_data_model.png)
 
-**Step 5: Conceptual Model **__
+__**Step 5: Conceptual Model**__
 
 ![Conceptual Model](images/conceptual_model.png)
 
