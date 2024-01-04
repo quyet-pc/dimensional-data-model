@@ -238,9 +238,15 @@ Step 3 & 4:  Define Dimension and Fact Tables
 
 Step 5: Conceptual Model 
 
+![Conceptual Model](images/conceptual_model.png)
+
+Step 6: Logical Model 
+
 ![Logical Model](images/logical_model.png)
 
+Step 7: Physical Model 
 
+During this phase, we utilize SQL to construct a table in the Data Warehouse. When employing stack dbt for data transformation, there's no necessity to create this physical model. Instead, we compose SQL queries and execute them on dbt. This process generates the table, and subsequently, we configure incremental updates, indexing, and other settings within dbt
 
 # 6. Support links
 - https://www.holistics.io/blog/the-three-types-of-fact-tables/
