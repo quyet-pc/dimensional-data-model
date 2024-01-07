@@ -31,6 +31,8 @@
       ![Star Schema](images/star_schema.png)
   - Snowflake Schema
     + an extension of the star schema where dimension tables are normalized
+         + normalized dimension table is organized to minimize redundancy and data anomalies by breaking it into smaller related tables, adhering to normalization principles
+         + denormalized dimension table includes redundant data intentionally to improve query performance by simplifying joins and aggregations, often used in data warehousing for analytical or reporting purposes
     + more complexity in queries and maintenance
       ![Snowflake Schema](images/snowflake_schema.png)
   - Galaxy Schema
