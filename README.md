@@ -37,7 +37,7 @@
     + is not a standalone schema but a collection of multiple star schemas that share some common dimensions
     + each star schema corresponds to a specific business process, and shared dimensions enable integration and analysis across different processes
     + provides flexibility in handling diverse business requirements
-      ![Galaxy Schema](images/Galaxy_schema.jpg)
+      ![Galaxy Schema](images/constellation_schema.jpg)
   - Comparison
     
       | Aspect | Star Schema | Snowflake Schema | Galaxy Schema |
