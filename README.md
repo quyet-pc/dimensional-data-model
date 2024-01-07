@@ -7,7 +7,7 @@
 2. Type of Dimensional Data Model
    - Star Schema
    - Snowflake Schema
-   - Constellation Schema
+   - Galaxy Schema
 3. Component of Star Schema 
    - Fact Table 
    - Dimension Table
@@ -33,14 +33,14 @@
     + an extension of the star schema where dimension tables are normalized
     + more complexity in queries and maintenance
       ![Snowflake Schema](images/snowflake_schema.png)
-  - Constellation Schema
+  - Galaxy Schema
     + is not a standalone schema but a collection of multiple star schemas that share some common dimensions
     + each star schema corresponds to a specific business process, and shared dimensions enable integration and analysis across different processes
     + provides flexibility in handling diverse business requirements
-      ![Constellation Schema](images/constellation_schema.jpg)
+      ![Galaxy Schema](images/Galaxy_schema.jpg)
   - Comparison
     
-      | Aspect | Star Schema | Snowflake Schema | Constellation Schema |
+      | Aspect | Star Schema | Snowflake Schema | Galaxy Schema |
       | -------- | -------- | -------- | ---------| 
       | Structure | Centralized structure with a single fact table | Centralized structure, but dimensions are normalized | Collection of multiple star schemas sharing common dimensions|
       | Complexity | Simple structure with less complexity | More complex due to normalized dimensions | Varied complexity based on the structure of individual star schemas|
@@ -50,7 +50,7 @@
       |Storage Space|May require more storage space|Can save storage space through normalization|Storage space can vary based on the structure of individual star schemas|
       |Flexibility|More rigid, but efficient for specific use cases|Offers flexibility with normalized dimensions|Flexible, accommodating diverse business requirements|
 
-   - In practical terms, companies utilize a range of business processes, with the Constellation Schema being a frequently employed tool for business intelligence. Below, I provide details about the Constellation Schema, but for simplicity, I refer to it as the Star Schema (Constellation Schema based on Star Schema)
+   - In practical terms, companies utilize a range of business processes, with the Galaxy Schema being a frequently employed tool for business intelligence. Below, I provide details about the Galaxy Schema, but for simplicity, I refer to it as the Star Schema (Galaxy Schema based on Star Schema)
     
 # 3. Components of Star Schema
    Initially, it is essential to comprehend the facts 
@@ -256,5 +256,6 @@ During this phase, we utilize SQL to construct a table in the Data Warehouse. Wh
 - https://www.holistics.io/blog/the-three-types-of-fact-tables/
 - https://www.geeksforgeeks.org/components-and-analysis-of-star-schema-design/
 - https://www.holistics.io/blog/scd-cloud-data-warehouse/
+- https://www.youtube.com/watch?v=M9egeAAbuuc&list=PL2R9mo00yw_1cKVmAZuGdq39hfIHbs8_Y
 
 
